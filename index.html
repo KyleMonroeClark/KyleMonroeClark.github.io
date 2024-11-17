@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kyle Monroe Clark - Data & Programming Projects</title>
+    <title>Kyle Monroe Clark - Data & Programming Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <style>
         /* Basic reset and body styling */
@@ -184,25 +184,37 @@
             background-color: #333;
         }
 
+        .image-container {
+            text-align: center;
+            margin-top: 3rem;
+        }
+
+        /* Add spacing between email and contact text */
+        .contact-section {
+            margin-bottom: 3rem;
+        }
+
     </style>
 </head>
 <body class="modern-scheme">
 
 <header>
     <h1>Kyle Monroe Clark</h1>
-    <p>Data & Programming Projects</p>
+    <p>Data & Programming Portfolio</p>
 </header>
 
 <div class="container">
     <button class="toggle-btn" id="color-toggle">Hit the Lights</button>
 
-    <!-- About Section -->
+    <!-- About Me Section -->
     <section id="about">
         <h2>About Me</h2>
-        <p>Hello! I am a data analyst with a background in Quantitative Analysis. I specialize in leveraging data-driven insights to guide business decisions and lead the development of complex projects. With experience in statistical analysis, Python scripting, and data visualization, I am passionate about turning raw data into actionable insights that can drive strategic growth and operational efficiency.</p>
+        <p>Hi, I'm Kyle Clark – a data enthusiast based in San Luis Obispo, CA. With a background in economics and a passion for solving complex problems, I thrive on transforming raw data into actionable business insights. I’m driven by a constant desire to learn and grow, and I’m always looking for new opportunities to challenge myself.</p>
+        <p>Whether it's utilizing Python, R, or SQL to analyze and model data, or using tools like Power BI and Tableau to present meaningful visualizations, I’m committed to helping organizations make data-driven decisions that lead to real-world impact. My experience in managing projects and leading teams has given me a unique ability to bridge the gap between technical analysis and clear, strategic recommendations. I excel at translating complex data into understandable and actionable insights for stakeholders.</p>
+        <p>With a strong foundation in statistical analysis, machine learning, and data visualization, I’m excited to continue leveraging these skills to tackle new challenges and support business growth. I believe in the power of data to drive innovation and am always eager to collaborate and learn along the way.</p>
     </section>
 
-    <!-- Current Featured Projects -->
+    <!-- Current Featured Projects Section -->
     <section id="projects">
         <h2>Current Featured Projects</h2>
         <ul class="project-list">
@@ -212,42 +224,43 @@
             </li>
             <li class="project-item">
                 <h3><a href="https://github.com/yourusername/lymphedema-clinic-dme" target="_blank">Lymphedema Clinic & DME Supplier Data Management</a></h3>
-                <p>This project provides a comprehensive data management solution for the Central Coast Lymphedema and Wound Center. It streamlines operations by automating patient order entry, inventory tracking, and profitability analysis for critical DME items, such as compression garments and pneumatic devices.</p>
+                <p>A data management solution for Central Coast Lymphedema and Wound Center to streamline business operations like inventory management, patient ordering, and revenue analysis.</p>
             </li>
         </ul>
         <p>More projects are available upon request to showcase my technical skills.</p>
-        <p>Skills include: R, Python, Microsoft Office Suite (Excel, Access), SQL (familiar with MySQL and SQL Server, more up-to-date with SQL Server but SQL is SQL), Visual Studio Code, Power BI, and Tableau.</p>
+        <p>Skills include: R, Python, Microsoft Office Suite (Excel, Access), SQL (familiar with MySQL and SQL Server, more up-to-date with SQL Server but SQL is SQL), Power BI, and Tableau.</p>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact">
+    <section id="contact" class="contact-section">
         <h2>Contact</h2>
         <p>If you'd like to collaborate on a project, discuss technical or soft skills, or just say hello, feel free to reach out!</p>
+        <br>
         <ul class="contact-list">
             <li>Email: <a href="mailto:kylemonroeclark@gmail.com">kylemonroeclark@gmail.com</a></li>
             <li>GitHub: <a href="https://github.com/KyleMonroeClark" target="_blank">github.com/KyleMonroeClark</a></li>
             <li>LinkedIn: <a href="https://www.linkedin.com/in/kylemonroeclark/" target="_blank">linkedin.com/in/kylemonroeclark</a></li>
         </ul>
     </section>
+    
+    <!-- Image Section (Placeholder for now) -->
+    <div class="image-container">
+        <!-- Insert your image here -->
+        <img src="image.png" alt="Kyle Monroe Clark" width="300">
+    </div>
 </div>
 
 <footer>
-    <p>&copy; 2024 Kyle Clark. All rights reserved.</p>
+    <p>&copy; 2024 Kyle Monroe Clark. All rights reserved.</p>
 </footer>
 
 <script>
-    // Toggle color scheme function
+    // Toggle color scheme
     document.getElementById("color-toggle").addEventListener("click", function() {
         const body = document.body;
-        if (body.classList.contains("modern-scheme")) {
-            body.classList.remove("modern-scheme");
-            body.classList.add("portal-scheme");
-        } else {
-            body.classList.remove("portal-scheme");
-            body.classList.add("modern-scheme");
-        }
+        body.classList.toggle("portal-scheme");
+        body.classList.toggle("modern-scheme");
     });
 </script>
-
 </body>
 </html>
