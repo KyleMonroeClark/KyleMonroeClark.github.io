@@ -3,264 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kyle Monroe Clark - Data & Programming Portfolio</title>
+    <title>Kyle Monroe Clark - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        /* Basic reset and body styling */
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            font-family: 'Arial', sans-serif;
-            transition: all 0.3s ease;
-            line-height: 1.6;
-        }
-
-        a {
-            color: inherit;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        /* Default color scheme (Modern Dark/Light Theme) */
-        .modern-scheme {
-            --header-bg: #2C3E50;
-            --header-text: #fff;
-            --primary-bg: #f4f4f4;
-            --primary-text: #333;
-            --button-bg: #007acc;
-            --button-text: #fff;
-            --hover-bg: #f4f4f4;
-            --hover-border: #ddd;
-            --card-bg: #fff;
-            --card-border: #ddd;
-            --card-hover-bg: rgba(0, 0, 0, 0.05);
-            --footer-bg: #2C3E50;
-            --footer-text: #fff;
-        }
-
-        /* Portal 2 color scheme */
-        .portal-scheme {
-            --header-bg: #1E1E1E;
-            --header-text: #9C9C9C;
-            --primary-bg: #222;
-            --primary-text: #EEE;
-            --button-bg: #60B0E6; /* Light blue */
-            --button-text: #fff;
-            --hover-bg: #EEE;
-            --hover-border: #888;
-            --card-bg: #333;
-            --card-border: #444;
-            --card-hover-bg: #555;
-            --footer-bg: #1E1E1E;
-            --footer-text: #9C9C9C;
-        }
-
-        /* Apply the color scheme */
-        body {
-            background-color: var(--primary-bg);
-            color: var(--primary-text);
-        }
-
-        header {
-            background-color: var(--header-bg);
-            color: var(--header-text);
-            text-align: center;
-            padding: 2rem 1rem;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 0.5rem;
-        }
-
-        header p {
-            font-size: 1.2rem;
-            font-weight: 300;
-        }
-
-        .container {
-            width: 90%;
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 3rem 0;
-        }
-
-        section {
-            margin-bottom: 3rem;
-        }
-
-        h2 {
-            font-size: 1.8rem;
-            color: var(--primary-text);
-            border-bottom: 3px solid var(--button-bg);
-            padding-bottom: 0.3rem;
-            margin-bottom: 1rem;
-        }
-
-        p {
-            font-size: 1.1rem;
-            line-height: 1.7;
-        }
-
-        .project-list {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        .project-item {
-            background-color: var(--card-bg);
-            padding: 1.5rem;
-            margin-bottom: 1.5rem;
-            border-radius: 8px;
-            border: 1px solid var(--card-border);
-            transition: all 0.3s ease;
-        }
-
-        .project-item:hover {
-            background-color: var(--card-hover-bg);
-            transform: translateY(-5px);
-            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
-        }
-
-        .project-item h3 {
-            font-size: 1.5rem;
-            margin-bottom: 0.5rem;
-            color: var(--button-bg);
-        }
-
-        .project-item p {
-            font-size: 1rem;
-            color: #666;
-        }
-
-        .contact-list {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        .contact-list li {
-            font-size: 1.1rem;
-            margin-bottom: 1rem;
-        }
-
-        .contact-list li a {
-            color: var(--button-bg);
-        }
-
-        .contact-list li a:hover {
-            text-decoration: underline;
-        }
-
-        footer {
-            background-color: var(--footer-bg);
-            color: var(--footer-text);
-            text-align: center;
-            padding: 1.5rem 0;
-            margin-top: 3rem;
-            border-top: 1px solid var(--hover-border);
-        }
-
-        /* Button Styling */
-        .toggle-btn {
-            background-color: var(--button-bg);
-            color: var(--button-text);
-            padding: 0.75rem 1.5rem;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 1rem;
-            transition: background-color 0.3s ease;
-        }
-
-        .toggle-btn:hover {
-            background-color: #333;
-        }
-
-        .image-container {
-            text-align: center;
-            margin-top: 3rem;
-        }
-
-        /* Add spacing between email and contact text */
-        .contact-section {
-            margin-bottom: 3rem;
-        }
-
-    </style>
 </head>
-<body class="modern-scheme">
+<body>
+    <header>
+        <h1>Kyle Monroe Clark</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<header>
-    <h1>Kyle Monroe Clark</h1>
-    <p>Data & Programming Portfolio</p>
-</header>
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                I am a recent graduate from Cal Poly San Luis Obispo with a degree in Economics and a concentration in Quantitative Analysis. With years of experience in data analytics, application development, and database management, I bring a unique blend of technical expertise and analytical insight. My recent work includes developing a cryptocurrency trading algorithm and managing inventory systems for a healthcare clinic.
+            </p>
+        </section>
 
-<div class="container">
-    <button class="toggle-btn" id="color-toggle">Hit the Lights</button>
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>
+                    <strong>Python (4 years):</strong> Proficient in Python for data manipulation and analysis with Pandas, data visualization with Matplotlib, and application development with Tkinter. Designed and deployed solutions including a trading algorithm for cryptocurrency and a GUI-based medical order management system integrated with a relational database.
+                </li>
+                <li>
+                    <strong>R (4 years):</strong> Strong foundation in R from conducting econometric analysis during undergraduate coursework at Cal Poly SLO. While primarily using Python in recent years, I retain expertise in R’s data analysis and statistical capabilities.
+                </li>
+                <li>
+                    <strong>SQL (9+ years):</strong> Extensive experience with SQL, including MySQL, SQL Server, SQLite, and some familiarity with PostgreSQL. Designed relational database systems hosted on AWS and integrated them with applications to streamline workflows. My experience includes writing complex queries, creating data models, and maintaining database performance for real-world data analysis needs.
+                </li>
+                <li>
+                    <strong>Power BI and Tableau (3–4 years):</strong> Developed interactive dashboards for Hilton Grand Vacation, analyzing booking trends and presenting insights to executives and stakeholders to inform decisions. At my current role, I use Power BI and Excel dashboards to manage inventory trends and revenue metrics. Familiarity with Tableau ensures versatility in meeting organizational preferences for visualization tools.
+                </li>
+                <li>
+                    <strong>Excel (15+ years):</strong> Advanced skills in Excel for data analysis, including complex formulas, pivot tables, and dashboard creation. Regularly apply Excel in financial modeling, payroll analysis, and data visualization.
+                </li>
+                <li>
+                    <strong>Microsoft Access:</strong> Hands-on experience from an early role using Access for payroll, ordering, and other business data tracking. Improved workflows by customizing and optimizing existing Access databases.
+                </li>
+                <li>
+                    <strong>General Software Proficiency:</strong> Comprehensive experience with Microsoft Office suite, including Word and PowerPoint, gained from academic and professional settings. Able to adapt to new tools and software quickly.
+                </li>
+            </ul>
+        </section>
 
-    <!-- About Me Section -->
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hi, I'm Kyle Clark – a data enthusiast currently based in San Luis Obispo, CA. With a background in quantitative analysis and a passion for solving complex problems, I thrive on transforming raw data into actionable business insights. I’m driven by a constant desire to learn and grow, and I’m always looking for new opportunities to challenge myself.</p>
-        <p>Whether it's utilizing Python, R, or SQL to analyze and model data, or using tools like Power BI and Tableau to present meaningful visualizations, I’m committed to helping organizations make data-driven decisions that lead to real-world impact. My experience in managing projects and leading teams has given me a unique ability to bridge the gap between technical analysis and clear, strategic recommendations. I excel at translating complex data into understandable and actionable insights for stakeholders.</p>
-        <p>With a strong foundation in statistical analysis, strategic decision making, and data visualization, I’m excited to continue leveraging these skills to tackle new challenges and support business growth. I believe in the power of data to drive innovation and am always eager to collaborate and learn along the way.</p>
-    </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <p>Coming soon: A showcase of my work in data analysis, automation, and application development.</p>
+        </section>
 
-    <!-- Current Featured Projects Section -->
-    <section id="projects">
-        <h2>Current Featured Projects</h2>
-        <ul class="project-list">
-            <li class="project-item">
-                <h3><a href="https://github.com/KyleMonroeClark/High-Volatility-Commodity-Trading-Strategies-Analysis" target="_blank">High Volatility Commodity Trading Strategies Analysis</a></h3>
-                <p>A small part of a greater project to analyze different technical trading strategies through back-testing minute BTC candlestick data.</p>
-            </li>
-            <li class="project-item">
-                <h3><a href="https://github.com/KyleMonroeClark/CCLWC_DME_Inventory" target="_blank">Lymphedema Clinic & DME Supplier Data Management</a></h3>
-                <p>A data management solution for Central Coast Lymphedema and Wound Center to streamline business operations like inventory management, patient ordering, and revenue analysis.</p>
-            </li>
-        </ul>
-        <p>More projects are available upon request to showcase my technical skills.</p>
-        <p>Skills include: R, Python, Microsoft Office Suite (Excel, Access), SQL (familiar with MySQL and SQL Server, more up-to-date with SQL Server but SQL is SQL), Power BI, and Tableau.</p>
-    </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:kylemonroeclark@gmail.com">kylemonroeclark@gmail.com</a></p>
+        </section>
+    </main>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact-section">
-        <h2>Contact</h2>
-        <p>If you'd like to collaborate on a project, discuss technical or soft skills, or just say hello, feel free to reach out!</p>
-        <br>
-        <ul class="contact-list">
-            <li>Email: <a href="mailto:kylemonroeclark@gmail.com">kylemonroeclark@gmail.com</a></li>
-            <li>GitHub: <a href="https://github.com/KyleMonroeClark" target="_blank">github.com/KyleMonroeClark</a></li>
-            <li>LinkedIn: <a href="https://www.linkedin.com/in/kylemonroeclark/" target="_blank">linkedin.com/in/kylemonroeclark</a></li>
-        </ul>
-    </section>
-    
-    <!-- Image Section (Placeholder for now) -->
-    <div class="image-container">
-        <!-- Insert your image here -->
-        <img src="dumbJoke.png" alt="Kyle Monroe Clark" width="800" height="650">
-    </div>
-</div>
+    <footer>
+        <p>&copy; 2024 Kyle Monroe Clark. All rights reserved.</p>
+    </footer>
 
-<footer>
-    <p>&copy; 2024 Kyle Monroe Clark. All rights reserved.</p>
-</footer>
+    <script>
+        // Define access duration (in days)
+        const ACCESS_DURATION = 730; // 2 years
 
-<script>
-    // Toggle color scheme
-    document.getElementById("color-toggle").addEventListener("click", function() {
-        const body = document.body;
-        body.classList.toggle("portal-scheme");
-        body.classList.toggle("modern-scheme");
-    });
-</script>
+        // Check or set the start date in localStorage
+        const accessKey = 'portfolio_access_start';
+        const accessStartDate = localStorage.getItem(accessKey);
+
+        if (accessStartDate) {
+            // Calculate the days since the first access
+            const startDate = new Date(accessStartDate);
+            const today = new Date();
+            const diffTime = today - startDate;
+            const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
+
+            if (diffDays > ACCESS_DURATION) {
+                // Access expired
+                document.body.innerHTML = `
+                    <header>
+                        <h1>Access Expired</h1>
+                    </header>
+                    <div class="container">
+                        <section id="expired">
+                            <h2>Your access period has ended.</h2>
+                            <p>Please contact Kyle for extended access or renewal.</p>
+                            <p>Email: <a href="mailto:kylemonroeclark@gmail.com">kylemonroeclark@gmail.com</a></p>
+                        </section>
+                    </div>
+                    <footer>
+                        <p>&copy; 2024 Kyle Monroe Clark. All rights reserved.</p>
+                    </footer>
+                `;
+            }
+        } else {
+            // Set the start date for first-time visitors
+            localStorage.setItem(accessKey, new Date().toISOString());
+        }
+    </script>
 </body>
 </html>
