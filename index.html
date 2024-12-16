@@ -194,6 +194,55 @@
             margin-bottom: 3rem;
         }
 
+        /* Skills Section Styling */
+        #skills {
+            background-color: var(--card-bg);
+            padding: 3rem 0;
+            border-radius: 8px;
+            border: 1px solid var(--card-border);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        #skills h2 {
+            font-size: 2rem;
+            color: var(--primary-text);
+            border-bottom: 3px solid var(--button-bg);
+            padding-bottom: 0.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .skills-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .skill-item {
+            background-color: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border: 1px solid var(--card-border);
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .skill-item:hover {
+            background-color: var(--card-hover-bg);
+            transform: translateY(-5px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .skill-item h3 {
+            font-size: 1.4rem;
+            color: var(--button-bg);
+            margin-bottom: 1rem;
+        }
+
+        .skill-item p {
+            font-size: 1.1rem;
+            color: #666;
+        }
+
     </style>
 </head>
 <body class="modern-scheme">
@@ -212,6 +261,41 @@
         <p>Hi, I'm Kyle Clark – a data enthusiast currently based in San Luis Obispo, CA. With a background in quantitative analysis and a passion for solving complex problems, I thrive on transforming raw data into actionable business insights. I’m driven by a constant desire to learn and grow, and I’m always looking for new opportunities to challenge myself.</p>
         <p>Whether it's utilizing Python, R, or SQL to analyze and model data, or using tools like Power BI and Tableau to present meaningful visualizations, I’m committed to helping organizations make data-driven decisions that lead to real-world impact. My experience in managing projects and leading teams has given me a unique ability to bridge the gap between technical analysis and clear, strategic recommendations. I excel at translating complex data into understandable and actionable insights for stakeholders.</p>
         <p>With a strong foundation in statistical analysis, strategic decision making, and data visualization, I’m excited to continue leveraging these skills to tackle new challenges and support business growth. I believe in the power of data to drive innovation and am always eager to collaborate and learn along the way.</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="skill-item">
+                <h3>Python (4 years)</h3>
+                <p>Proficient in Python for data manipulation and analysis with Pandas, data visualization with Matplotlib, and application development with Tkinter. Designed and deployed solutions including a trading algorithm for cryptocurrency and a GUI-based medical order management system integrated with a relational database.</p>
+            </div>
+            <div class="skill-item">
+                <h3>R (4 years)</h3>
+                <p>Strong foundation in R from conducting econometric analysis during undergraduate coursework at Cal Poly SLO. While primarily using Python in recent years, I retain expertise in R’s data analysis and statistical capabilities.</p>
+            </div>
+            <div class="skill-item">
+                <h3>SQL (9+ years)</h3>
+                <p>Extensive experience with SQL, including MySQL, SQL Server, SQLite, and some familiarity with PostgreSQL. Designed relational database systems hosted on AWS and integrated them with applications to streamline workflows. My experience includes writing complex queries, creating data models, and maintaining database performance for real-world data analysis needs.</p>
+            </div>
+            <div class="skill-item">
+                <h3>Power BI and Tableau (3–4 years)</h3>
+                <p>Developed interactive dashboards for Hilton Grand Vacation, analyzing booking trends and presenting insights to executives and stakeholders to inform decisions. At my current role, I use Power BI and Excel dashboards to manage inventory trends and revenue metrics. Familiarity with Tableau ensures versatility in meeting organizational preferences for visualization tools.</p>
+            </div>
+            <div class="skill-item">
+                <h3>Excel (15+ years)</h3>
+                <p>Advanced skills in Excel for data analysis, including complex formulas, pivot tables, and dashboard creation. Regularly apply Excel in financial modeling, payroll analysis, and data visualization.</p>
+            </div>
+            <div class="skill-item">
+                <h3>Microsoft Access</h3>
+                <p>Hands-on experience from an early role using Access for payroll, ordering, and other business data tracking. Improved workflows by customizing and optimizing existing Access databases.</p>
+            </div>
+            <div class="skill-item">
+                <h3>General Software Proficiency</h3>
+                <p>Comprehensive experience with Microsoft Office suite, including Word and PowerPoint, gained from academic and professional settings. Able to adapt to new tools and software quickly.</p>
+            </div>
+        </div>
     </section>
 
     <!-- Current Featured Projects Section -->
@@ -262,5 +346,6 @@
         body.classList.toggle("modern-scheme");
     });
 </script>
+
 </body>
 </html>
