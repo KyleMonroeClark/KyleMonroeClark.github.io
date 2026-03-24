@@ -217,17 +217,18 @@
     border: 1px solid var(--card-border);
     background-color: var(--card-bg);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: var(--primary-text); /* make all text inside inherit theme */
 }
 
 .skill-item h3 {
     font-size: 1.4rem;
-    color: var(--button-bg);
+    color: var(--primary-text); /* use theme text color instead of button color */
     margin-bottom: 0.5rem;
 }
 
 .skill-item p {
     font-size: 1.1rem;
-    color: var(--primary-text);
+    color: var(--primary-text); /* already correct */
     margin: 0.2rem 0;
 }
     </style>
@@ -350,7 +351,7 @@
         
             <div class="skill-item">
                 <h3><i class="fa-solid fa-file-excel"></i> Excel</h3>
-                <p><strong>Experience:</strong> 8 years</p>
+                <p><strong>Experience:</strong> <span class="exp" data-start="2017"></span></p>
                 <p><strong>Relevant Work:</strong> Built financial models, payroll analysis tools, and automated reports using VBA macros.</p>
                 <p><strong>Description:</strong> Expert in formulas, pivot tables, and dashboard creation. Daily user with extensive experience in business and financial analysis.</p>
             </div>
@@ -371,8 +372,8 @@
 
             <div class="skill-item">
                 <h3><i class="fa-solid fa-brain"></i> Expertise</h3>
-                <p><strong>Data Pipelines:</strong> Built end-to-end workflows using Python and SQL for data extraction, transformation, and integration.</p>
-                <p><strong>Data Modeling:</strong> Designed relational structures and optimized data models in Power BI, SQL, and Excel.</p>
+                <p><strong>Pipelines:</strong> Built end-to-end workflows using Python and SQL for data extraction, transformation, and integration.</p>
+                <p><strong>Modeling:</strong> Designed relational structures and optimized data models in Power BI, SQL, and Excel.</p>
                 <p><strong>Optimization:</strong> Improved workflows through automation and efficient data processing across tools.</p>
             </div>
         </div>
