@@ -276,50 +276,110 @@
     </section>
 
     <section id="skills">
-    <h2>Technical Skills</h2>
-
-        <div class="skill-item">
-            <h3>Python</h3>
-            <p><strong>Experience:</strong> 4 years</p>
-            <p><strong>Relevant Work:</strong> Designed a trading algorithm for cryptocurrency and developed a GUI-based medical order management system integrated with a relational database. And various other small projects.</p>
-            <p><strong>Description:</strong> Skilled in Python for data manipulation and analysis with Pandas, data visualization with Matplotlib, and application development with Tkinter. I've really began to love to use python over the past few years, and now use it every day.</p>
+        <h2>Technical Skills</h2>
+        
+        <!-- Font Awesome Icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        
+        <style>
+        #skills {
+            padding: 20px;
+        }
+        
+        #skills h2 {
+            margin-bottom: 20px;
+        }
+        
+        .skill-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        
+        .skill-item {
+            background: #ffffff;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        
+        .skill-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+        }
+        
+        .skill-item h3 {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+        
+        .skill-item i {
+            color: #0078D4;
+            font-size: 20px;
+        }
+        
+        .skill-item p {
+            margin: 6px 0;
+            line-height: 1.4;
+        }
+        
+        .exp {
+            font-weight: bold;
+            color: #333;
+        }
+        </style>
+        
+        <div class="skill-grid">
+        
+            <div class="skill-item">
+                <h3><i class="fa-solid fa-chart-line"></i> Power BI</h3>
+                <p><strong>Experience:</strong> <span class="exp" data-start="2022"></span></p>
+                <p><strong>Relevant Work:</strong> Developed interactive dashboards for Hilton Grand Vacations, analyzing booking trends and presenting insights to executives and stakeholders.</p>
+                <p><strong>Description:</strong> Highly experienced in Power BI for building dynamic dashboards, tracking KPIs, and delivering business insights. Regularly used to monitor inventory trends and revenue metrics.</p>
+            </div>
+        
+            <div class="skill-item">
+                <h3><i class="fa-solid fa-database"></i> SQL</h3>
+                <p><strong>Experience:</strong> <span class="exp" data-start="2023"></span></p>
+                <p><strong>Relevant Work:</strong> Designed relational database systems hosted on AWS and integrated them into applications to streamline workflows.</p>
+                <p><strong>Description:</strong> Advanced proficiency in MySQL, SQL Server, and SQLite, with working knowledge of PostgreSQL. Strong in complex queries, joins, and performance optimization.</p>
+            </div>
+        
+            <div class="skill-item">
+                <h3><i class="fa-solid fa-file-excel"></i> Excel</h3>
+                <p><strong>Experience:</strong> 8 years</p>
+                <p><strong>Relevant Work:</strong> Built financial models, payroll analysis tools, and automated reports using VBA macros.</p>
+                <p><strong>Description:</strong> Expert in formulas, pivot tables, and dashboard creation. Daily user with extensive experience in business and financial analysis.</p>
+            </div>
+        
+            <div class="skill-item">
+                <h3><i class="fa-brands fa-python"></i> Python</h3>
+                <p><strong>Experience:</strong> <span class="exp" data-start="2020"></span></p>
+                <p><strong>Relevant Work:</strong> Developed a cryptocurrency trading algorithm and a GUI-based medical order management system.</p>
+                <p><strong>Description:</strong> Strong in data analysis (Pandas), visualization (Matplotlib), and application development (Tkinter). Primary programming language used daily.</p>
+            </div>
+        
+            <div class="skill-item">
+                <h3><i class="fa-solid fa-chart-simple"></i> R</h3>
+                <p><strong>Experience:</strong> <span class="exp" data-start="2020"></span></p>
+                <p><strong>Relevant Work:</strong> Conducted econometric and statistical analysis during undergraduate coursework.</p>
+                <p><strong>Description:</strong> Solid foundation in statistical computing and data analysis. Less frequently used recently but still proficient.</p>
+            </div>
+        
         </div>
-    
-        <div class="skill-item">
-            <h3>R</h3>
-            <p><strong>Experience:</strong> 4 years</p>
-            <p><strong>Relevant Work:</strong> Conducted econometric analysis during undergraduate coursework at Cal Poly SLO.</p>
-            <p><strong>Description:</strong> While primarily using Python in recent years, I retain expertise in R’s data analysis and statistical capabilities. The only reason I didn't put expert is that I haven't used it much in the past two years.</p>
-        </div>
-    
-        <div class="skill-item">
-            <h3>SQL</h3>
-            <p><strong>Experience:</strong> 4 years</p>
-            <p><strong>Relevant Work:</strong> Designed relational database systems hosted on AWS and integrated them with work applications to streamline workflows. And various smaller projects.</p>
-            <p><strong>Description:</strong> Skilled in MySQL, SQL Server, SQLite, and some familiarity with PostgreSQL. Skilled at writing complex queries, joins, creating data models, and maintaining database performance for real-world data analysis. Expert may be more applicable as I find SQL to be very easy to use.</p>
-        </div>
-    
-        <div class="skill-item">
-            <h3>Power BI and Tableau</h3>
-            <p><strong>Experience:</strong> 4 years</p>
-            <p><strong>Relevant Work:</strong> Developed interactive dashboards for Hilton Grand Vacation, analyzing booking trends and presenting insights to executives and stakeholders.</p>
-            <p><strong>Description:</strong> Versatile in Power BI and Tableau for creating dashboards. At my current role, I use Power BI and Excel dashboards to manage inventory trends and revenue metrics. I'm more practiced with Power BI, but so far I've found them to be very similar dashboard tools.</p>
-        </div>
-    
-        <div class="skill-item">
-            <h3>Excel</h3>
-            <p><strong>Experience:</strong> 15+ years</p>
-            <p><strong>Relevant Work:</strong> Applied Excel in financial modeling, payroll analysis, and data visualization. Created pivot tables, statistical models, and tools that use Visual Basic Application macros.</p>
-            <p><strong>Description:</strong> Skilled in complex formulas, pivot tables, and dashboard creation for data analysis and reporting. I've used excel since I was a kid, and regularly use it every day.</p>
-        </div>
-    
-        <div class="skill-item">
-            <h3>Microsoft Access</h3>
-            <p><strong>Experience:</strong> 5 years</p>
-            <p><strong>Relevant Work:</strong> Improved workflows by in existing Access databases, and created new Access database.</p>
-            <p><strong>Description:</strong> Used Access for payroll and ordering as a shift supervisor at Splash Cafe. Since then I've made a basic relational database solution for short term use at Central Coast Lymphedema.</p>
-        </div>
-    
+        
+        <script>
+        document.querySelectorAll('.exp').forEach(el => {
+            const startYear = parseInt(el.getAttribute('data-start'));
+            const currentYear = new Date().getFullYear();
+            const years = currentYear - startYear;
+            el.textContent = years + " years";
+        });
+        </script>
+        
     </section>
 
     <!-- Contact Section -->
